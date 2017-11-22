@@ -1,0 +1,135 @@
+input, select, textarea
+{
+    background-color: #111111;
+    color: cyan;
+    padding: 2px;
+    font-family: "helvetica", "courier", "serif";
+    font-size: 0.9em;
+    outline: none;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    height: 20px;
+    /*text-transform: lowercase;
+    height: 18px;
+    opacity: 0.7;
+    transition: opacity 0.5s;*/
+}
+
+/*input:hover, input:active, input:focus, select:hover, select:active, select:focus, textarea:hover, textarea:active, textarea:focus
+{
+    opacity: 1;
+}*/
+
+select
+{
+    width: 306px;
+    height: 24px;
+}
+
+textarea
+{
+    height: 72px;
+}
+
+input[ type=button ]
+{
+    cursor: pointer;
+    min-width: 50px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 10px 0 10px;
+}
+
+input[ type=button ].add:hover
+{
+    background-color: green;
+    color: black;
+}
+
+input[ type=button ].remove:hover
+{
+    background-color: red;
+    color: black;
+}
+
+input[ type=text ]
+{
+    width: 300px;
+}
+
+input[ type=range ]
+{
+    width: 360px;
+}
+
+input[ type=number ]
+{
+    width: 65px;
+}
+
+input[ type=range ]
+{
+    -webkit-appearance: none;
+    height: 3px;
+}
+
+input[ type=range ]::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #333333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[ type=range ]::-webkit-slider-thumb:hover
+{
+    background-color: #666666;
+}
+
+input[ type=range ]::-webkit-slider-thumb:active
+{
+    background-color: green;
+}
+
+input[ type=checkbox ], input[ type=radio ]
+{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+input:disabled, .disabled
+{
+    color: black;
+    pointer-events: none;
+    background-color: red !important;
+}
+
+input:focus
+{
+    border-color: #666666;
+}
+
+input:read-only
+{
+    color: yellow;
+    pointer-events: none;
+}
+
+.mask
+{
+    position: absolute;
+    z-index: 10;
+}
+
+.mask input
+{
+    width: 270px;
+}
+
+.required
+{
+    border-color: #993333;
+}

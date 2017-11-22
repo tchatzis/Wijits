@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kritis 14-16</title>
+    <script>
+        var click = function( event )
+        {
+            var t = event.target;
+            var ref;
+            var trs = [];
+            var tr;
+
+            if ( t.classList.contains( "link" ) )
+            {
+                if ( t.classList.contains( "active" ) )
+                {
+                    t.classList.remove( "active" );
+                }
+                else
+                {
+                    t.classList.add( "active" );
+                }
+
+                ref = event.target.innerText;
+                trs = document.querySelectorAll( '[data-ref="' + ref + '"]' );
+
+                for ( var i = 0; i < trs.length; i++ )
+                {
+                    tr = trs[ i ];
+                    tr.classList.remove( "hidden" );
+                }
+            }
+        };
+
+        window.addEventListener( 'click', click )
+    </script>
+    <style>
+        body
+        {
+            background-color: black;
+            color: white;
+            font-family: "courier", "sans-serif";
+        }
+
+        .active
+        {
+            background-color: green;
+        }
+
+        .headers
+        {
+            color: cyan;
+        }
+
+        .hidden
+        {
+            display: none;
+        }
+
+        .outlined
+        {
+            border-collapse: collapsed;
+            border-spacing: 0;
+        }
+
+        .outlined th
+        {
+            padding: 5px;
+        }
+
+        .outlined tr:last-child td
+        {
+            border-bottom: 1px solid #666;
+        }
+
+        .outlined td
+        {
+            border-top: 1px solid #666;
+            border-left: 1px solid #666;
+            padding: 5px;
+        }
+
+        .outlined td:last-child
+        {
+            border-right: 1px solid #666;
+        }
+
+        .completed td
+        {
+            color: #666;
+        }
+
+        td.owed
+        {
+            background-color: yellow;
+            color: black;
+        }
+
+        td.late
+        {
+            color: red;
+        }
+
+        td.subset
+        {
+            border-left: 1px solid black;
+        }
+
+        .link:hover
+        {
+            background-color: #666;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table class="outlined">
+        <tr class="headers">
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Recipient</th>
+            <th>Reference</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>06-06-2017</td>
+            <td>300</td>
+            <td>Dionis</td>
+            <td class="link">Cash</td>
+            <td>Deposit for Demolition</td>
+        </tr>
+        <tr>
+            <td>14-06-2017</td>
+            <td>1200</td>
+            <td>Dionis</td>
+            <td class="link">345659749</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>26-06-2017</td>
+            <td>1000</td>
+            <td>Dionis</td>
+            <td class="link">347680911</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>29-06-2017</td>
+            <td>3360</td>
+            <td>Dionis</td>
+            <td class="link">ΕΜΒ42400021677</td>
+            <td>Transfer to Account</td>
+        </tr>
+        <tr>
+            <td>07-07-2017</td>
+            <td>1800</td>
+            <td>Drita</td>
+            <td class="link">70015719997</td>
+            <td>Renovations</td>
+        </tr>
+        <tr>
+            <td>19-07-2017</td>
+            <td>1100</td>
+            <td>Dionis</td>
+            <td class="link">356640936</td>
+            <td>Stucco and Cleaning</td>
+        </tr>
+        <tr>
+            <td>01-08-2017</td>
+            <td>750</td>
+            <td>Dionis</td>
+            <td class="link">364062878</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>16-09-2017</td>
+            <td>550</td>
+            <td>Dionis</td>
+            <td class="link">374824031</td>
+            <td>Security Door</td>
+        </tr>
+        <tr>
+            <td>21-06-2017</td>
+            <td>750</td>
+            <td>Dionis</td>
+            <td class="link">376051786</td>
+            <td>Window Screens and Painting ( Primer )</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>10810</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="outlined">
+        <tr class="headers">
+            <th></th>
+            <th>Job</th>
+            <th>Contractor</th>
+            <th>Planned</th>
+            <th>Completed</th>
+            <th>Recipient</th>
+            <th>Amount</th>
+            <th>For</th>
+            <th>Method</th>
+            <th>Bank</th>
+            <th>Reference</th>
+            <th>Date</th>
+        </tr>
+        <tr class="completed hidden" data-ref="Cash">
+            <td></td>
+            <td>Demolish</td>
+            <td>Dionis</td>
+            <td>06-06-2017</td>
+            <td></td>
+            <td>Dionis</td>
+            <td>300</td>
+            <td>Deposit</td>
+            <td>Cash</td>
+            <td></td>
+            <td></td>
+            <td>06-06-2017</td>
+        </tr>
+        <tr class="completed hidden" data-ref="345659749">
+            <td class="subset"></td>
+            <td class="subset"></td>
+            <td class="subset"></td>
+            <td class="subset"></td>
+            <td>14-06-2017</td>
+            <td>Dionis</td>
+            <td>700</td>
+            <td>Paid In Full</td>
+            <td>Transfer</td>
+            <td>NBG</td>
+            <td>345659749</td>
+            <td>14-06-2017</td>
+        </tr>
+        <tr class="completed hidden">
+            <td></td>
+            <td>Walls</td>
+            <td>Dionis</td>
+            <td></td>
+            <td></td>
+            <td>Dionis</td>
+            <td>2000</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="completed hidden">
+            <td></td>
+            <td>New Electrical</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Dionis</td>
+            <td>1700</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="completed hidden">
+            <td></td>
+            <td>New Plumbing</td>
+            <td>Dimitri</td>
+            <td></td>
+            <td></td>
+            <td>Dionis</td>
+            <td>2000</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="completed hidden">
+            <td></td>
+            <td>Buy Plumbing Fixtures</td>
+            <td>Tito</td>
+            <td></td>
+            <td></td>
+            <td>Psaradelis</td>
+            <td>900</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="completed hidden">
+            <td></td>
+            <td>Tile Bathroom</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Dionis</td>
+            <td>700</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="completed hidden">
+            <td></td>
+            <td>Install Windows</td>
+            <td></td>
+            <td></td>
+            <td class="late"></td>
+            <td>Dionis</td>
+            <td>2000</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="completed hidden">
+            <td></td>
+            <td>Install Door</td>
+            <td></td>
+            <td></td>
+            <td class="late">19-09-2017</td>
+            <td>Dionis</td>
+            <td>550</td>
+            <td></td>
+            <td>Transfer</td>
+            <td>NBG</td>
+            <td>374824031</td>
+            <td>16-09-2017</td>
+        </tr>
+        <tr class="hidden">
+            <td>1</td>
+            <td>Caulk Windows</td>
+            <td>Dionis</td>
+            <td>20-10-2017</td>
+            <td></td>
+            <td>Dionis</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="hidden" data-ref="376051786">
+            <td>2</td>
+            <td>Sand and Primer</td>
+            <td>Dionis</td>
+            <td>20-10-2017</td>
+            <td></td>
+            <td>Dionis</td>
+            <td>550</td>
+            <td></td>
+            <td>Transfer</td>
+            <td>NBG</td>
+            <td>376051786</td>
+            <td>21-09-2017</td>
+        </tr>
+        <tr class="hidden" data-ref="376051786">
+            <td>3</td>
+            <td>Window Screens</td>
+            <td>Dionis</td>
+            <td>20-10-2017</td>
+            <td></td>
+            <td>Dionis</td>
+            <td>200</td>
+            <td></td>
+            <td>Transfer</td>
+            <td>NBG</td>
+            <td>376051786</td>
+            <td>21-09-2017</td>
+        </tr>
+        <tr class="hidden" data-ref="Cash">
+            <td>4</td>
+            <td>Sand Floor</td>
+            <td>Dionis</td>
+            <td>20-10-2017</td>
+            <td></td>
+            <td>Dionis</td>
+            <td>150</td>
+            <td></td>
+            <td>Cash</td>
+            <td></td>
+            <td></td>
+            <td>28-09-2017</td>
+        </tr>
+        <tr class="hidden" data-ref="Cash">
+            <td>5</td>
+            <td>Shower Lights</td>
+            <td></td>
+            <td>20-10-2017</td>
+            <td></td>
+            <td></td>
+            <td>50</td>
+            <td>Parts</td>
+            <td>Cash</td>
+            <td></td>
+            <td></td>
+            <td>26-10-2017</td>
+        </tr>
+        <tr class="hidden">
+            <td class="subset"></td>
+            <td class="subset"></td>
+            <td class="subset"></td>
+            <td class="subset"></td>
+            <td class="subset"></td>
+            <td class="subset"></td>
+            <td class="owed">?</td>
+            <td>Labour</td>
+            <td class="subset"></td>
+            <td class="subset"></td>
+            <td class="subset"></td>
+            <td class="subset"></td>
+        </tr>
+        <tr class="hidden" data-ref="Debit">
+            <td>6</td>
+            <td>Interior Doors</td>
+            <td>Mihali</td>
+            <td>06-10-2017</td>
+            <td></td>
+            <td>Schoiniotis</td>
+            <td>370</td>
+            <td></td>
+            <td>Debit</td>
+            <td>NBG</td>
+            <td></td>
+            <td>26-09-2017</td>
+        </tr>
+        <tr class="hidden">
+            <td>7</td>
+            <td>Laundry Plumbing</td>
+            <td></td>
+            <td>20-10-2017</td>
+            <td></td>
+            <td></td>
+            <td class="owed">?</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="hidden">
+            <td>8</td>
+            <td>Bathroom Fixtures</td>
+            <td></td>
+            <td>30-04-2018</td>
+            <td></td>
+            <td></td>
+            <td class="owed">?</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="hidden">
+            <td>9</td>
+            <td>Floor Tiles</td>
+            <td></td>
+            <td>30-04-2018</td>
+            <td></td>
+            <td></td>
+            <td class="owed">?</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="hidden">
+            <td>10</td>
+            <td>Balcony Tiles</td>
+            <td></td>
+            <td>30-04-2018</td>
+            <td class="late"></td>
+            <td>Dionis</td>
+            <td>100</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="hidden">
+            <td>11</td>
+            <td>Painting</td>
+            <td></td>
+            <td>30-04-2018</td>
+            <td></td>
+            <td></td>
+            <td class="owed">?</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="hidden">
+            <td>12</td>
+            <td>Bedroom Closet</td>
+            <td>Antonis</td>
+            <td>30-04-2018</td>
+            <td></td>
+            <td></td>
+            <td class="owed">?</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="hidden">
+            <td>13</td>
+            <td>Kitchen Cabinets</td>
+            <td>Antonis</td>
+            <td>30-04-2018</td>
+            <td></td>
+            <td></td>
+            <td class="owed">?</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

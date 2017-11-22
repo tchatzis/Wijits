@@ -1,0 +1,1864 @@
+[
+  {
+    "id": 0,
+    "sequence": 0,
+    "button":
+    {
+      "icon": "",
+      "label": "GL BordeauxBlanc"
+    },
+    "data":
+    {
+      "alias": "Bordeaux Blanc or Sauvignon Blanc",
+      "type": "white",
+      "variety":
+      [
+        {
+          "Sauvignon Blanc": 60,
+          "Muscadelle": 20,
+          "Semillon": 20
+        }
+      ],
+      "producer": "Chateau Haut-Besac",
+      "vintage": 2013,
+      "region": "Bordeaux",
+      "country": "France",
+      "properties":
+      {
+        "color": "Pale Yellow, Green",
+        "bouquet": "Bosc pear, hay, white flowers",
+        "palate": "supple stone fruits, apricot, white flowers"
+      },
+      "blurb":
+      {
+        "body": "medium",
+        "fruit": "pear, apricot",
+        "other note": "white flowers"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "chateau-haut-besac.jpg",
+        "label": ""
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": "serve chilled"
+      },
+      "board":
+      {
+        "label": "",
+        "top": 248
+      },
+      "menu":
+      {
+        "label": "",
+        "top": 151
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 11,
+        "carafe": 32,
+        "big carafe": 60
+      }
+    }
+  },
+  {
+    "id": 1,
+    "sequence": 1,
+    "button":
+    {
+      "icon": "",
+      "label": "GL Catalonian"
+    }
+  },
+  {
+    "id": 2,
+    "sequence": 2,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Chenin Babylo"
+    },
+    "data":
+    {
+      "alias": "Chenin blanc or Pineau de la Loire",
+      "type": "white",
+      "variety":
+        [
+          {
+            "Chenin Blanc": 100
+          }
+        ],
+      "producer": "BabylonStoren",
+      "vintage": 2014,
+      "region": "Western Cape",
+      "country": "South Africa",
+      "properties":
+      {
+        "color": "Pale Yellow",
+        "bouquet": "guava, melon and green figs",
+        "palate": "Dry and Full.  Mineral notes enhanced by tropical fruit notes"
+      },
+      "blurb":
+      {
+        "body": "medium",
+        "fruit": "citrus & tropical",
+        "other note": "Soft minerals"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "babylonstoren.jpg",
+        "label": ""
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": "serve chilled"
+      },
+      "board":
+      {
+        "label": "Chenin Blanc",
+        "top": 280
+      },
+      "menu":
+      {
+        "label": "Chenin Blanc",
+        "top": 232
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 11,
+        "carafe": 32,
+        "big carafe": 60
+      }
+    }
+  },
+  {
+    "id": 3,
+    "sequence": 3,
+    "button":
+    {
+      "icon": "",
+      "label": "GL CotesDuRhone"
+    },
+    "data":
+    {
+      "alias": "Côtes du Rhône or Grenache",
+      "type": "red",
+      "variety":
+      [
+        {
+          "Grenache": 70,
+          "Syrah": 25,
+          "Mouvedre": 5
+        }
+      ],
+      "producer": "Chateau Beauchene",
+      "vintage": 2015,
+      "region": "Cote du Rhone",
+      "country": "France",
+      "properties":
+      {
+        "color": "Ruby Red",
+        "bouquet": "Rich fruit with an underlying leather and garique",
+        "palate": "Black cherries with an earthy undertone"
+      },
+      "blurb":
+      {
+        "body": "Light to medium",
+        "fruit": "Black Cherries",
+        "other note": "Vanilla, liquorice, sage"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "chateau-beauchene.jpg",
+        "label": "Chateau Beauchene - Premier Terroir"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "",
+        "top": 0
+      },
+      "menu":
+      {
+        "label": "Cote du Rhone",
+        "top": 445
+      },
+      "location":
+      [
+        "Back Service Shelf",
+        "Front Service Shelf"
+      ],
+      "price":
+      {
+        "glass": 13,
+        "carafe": 37,
+        "big carafe": 69
+      }
+    }
+  },
+  {
+    "id": 4,
+    "sequence": 4,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Monastrell"
+    },
+    "data":
+    {
+      "alias": "Monastrell, Mourvèdre or Mataró",
+      "type": "red",
+      "variety":
+      [
+        {
+          "Monastreli": 100
+        }
+      ],
+      "producer": "Bodegas Enrique Mendoza",
+      "vintage": 2010,
+      "region": "Alicante",
+      "country": "Spain",
+      "properties":
+      {
+        "color": "Ruby Red",
+        "bouquet": "Fresh black cherries and red berries mingled with hints of sweet spice, toast and cocoa",
+        "palate": "Red berries, sage, bay leaf, thyme, balsamic"
+      },
+      "blurb":
+      {
+        "body": "Light to medium",
+        "fruit": "Black Cherries and red berries",
+        "other note": "Earth and spice notes. sage, bay leaf, thyme, balsamic"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "enrique-mendoza.jpg",
+        "label": ""
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Monastrell",
+        "top": 445
+      },
+      "menu":
+      {
+        "label": "Monastrell",
+        "top": 462
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 10,
+        "carafe": 29,
+        "big carafe": 54
+      }
+    }
+  },
+  {
+    "id": 5,
+    "sequence": 5,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Vermentinu"
+    },
+    "data":
+    {
+      "alias": "Vermentino, Pigato, or Favorita",
+      "type": "white",
+      "variety":
+      [
+        {
+          "Vermentinu": 50,
+          "Chardonnay": 50
+        }
+      ],
+      "producer": "Terre Vecchia",
+      "vintage": 2016,
+      "region": "Corsica",
+      "country": "France",
+      "properties":
+      {
+        "color": "Pale Yellow",
+        "bouquet": "Mandarin, lemon citrus, white peach and white flowers",
+        "palate": "Crisp and dry with zippy lemon acidity and a candied citron finish"
+      },
+      "blurb":
+      {
+        "body": "light",
+        "fruit": "Mandarin and lemon",
+        "other note": "Candied lemon peel and white flowers"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "terre-vecchia.jpg",
+        "label": "Terre Vecchia - Il De Beaute"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Vermentino",
+        "top": 185
+      },
+      "menu":
+      {
+        "label": "Vermentinu/Chardonnay",
+        "top": 185
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 10,
+        "carafe": 29,
+        "big carafe": 54
+      }
+    }
+  },
+  {
+    "id": 6,
+    "sequence": 6,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Gamay"
+    },
+    "data":
+    {
+      "alias": "Gamay or Gamay Noir à Jus Blanc",
+      "type": "red",
+      "variety":
+      [
+        {
+          "Cinsault": 45,
+          "Grenache": 30,
+          "Syrah": 25
+        }
+      ],
+      "producer": "Chateau de Pizay",
+      "vintage": 2016,
+      "region": "Morgon",
+      "country": "France",
+      "properties":
+      {
+        "color": "Bright ruby",
+        "bouquet": "Berry and savory aromatics",
+        "palate": "Bright cherries, edged in rosemary and earth notes. Firm tannins give structure to the soft, juicy fruit."
+      },
+      "blurb":
+      {
+        "body": "Light to Medium",
+        "fruit": "Bing cherries, wild berries with rosemary and earth tones",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "chateau-pizay.jpg",
+        "label": "Chateau de Pizay - Morgon"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": "Serve Chilled"
+      },
+      "board":
+      {
+        "label": "",
+        "top": 0
+      },
+      "menu":
+      {
+        "label": "Gamay",
+        "top": 364
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 11,
+        "carafe": 32,
+        "big carafe": 60
+      }
+    }
+  },
+  {
+    "id": 7,
+    "sequence": 7,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Sauv Gaspard"
+    },
+    "data":
+    {
+      "alias": "Sauvignon ( or Bordeaux ) Blanc",
+      "type": "white",
+      "variety":
+      [
+        {
+          "Sauvignon Blanc": 100
+        }
+      ],
+      "producer": "Gaspard",
+      "vintage": 2016,
+      "region": "Loire Valley",
+      "country": "France",
+      "properties":
+      {
+        "color": "Pale Yellow",
+        "bouquet": "Lemon Zest, Apple",
+        "palate": " Notes of grass, apple and lemon zest"
+      },
+      "blurb":
+      {
+        "body": "Light to Medium",
+        "fruit": "Apple, lemon zest",
+        "other note": "organically farmed, finishes sweet and tart"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "gaspard.jpg",
+        "label": "Gaspard - Sauvignon Blanc"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": "serve chilled"
+      },
+      "board":
+      {
+        "label": "Sauvignon Blanc",
+        "top": 232
+      },
+      "menu":
+      {
+        "label": "Sauvignon Blanc",
+        "top": 200
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 13,
+        "carafe": 37,
+        "big carafe": 69
+      }
+    }
+  },
+  {
+    "id": 8,
+    "sequence": 8,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Lambrusco"
+    },
+    "data":
+    {
+      "alias": "Lambrusco, Colorino or Abrusco",
+      "type": "sparkling",
+      "variety":
+      [
+        {
+          "Lambrusco": 100
+        }
+      ],
+      "producer": "La Battagliola NV",
+      "vintage": 2016,
+      "region": "Marche",
+      "country": "Italy",
+      "properties":
+      {
+        "color": "Purple",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "la-battagliola.jpg",
+        "label": "La Battagliola - Dosage"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": "Serve Chilled"
+      },
+      "board":
+      {
+        "label": "Lambrusco",
+        "top": 124
+      },
+      "menu":
+      {
+        "label": "Lambrusco",
+        "top": 96
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 12,
+        "carafe": "N/A",
+        "big carafe": "N/A"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "sequence": 9,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Syrah Lenore"
+    },
+    "data":
+    {
+      "alias": "Syrah or Shiraz",
+      "type": "red",
+      "variety":
+      [
+        {
+          "Syrah": 100
+        }
+      ],
+      "producer": "Owen Roe",
+      "vintage": 2013,
+      "region": "Yakima Valley, WA",
+      "country": "USA",
+      "properties":
+      {
+        "color": "Dark Red",
+        "bouquet": "Berry and savory aromatics",
+        "palate": "Dark berries, slightly gamey"
+      },
+      "blurb":
+      {
+        "body": "medium",
+        "fruit": "ripe black berries, cigar box, cedar",
+        "other note": "velevty tannins with great length. Farmed sutainably."
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "lenore.jpg",
+        "label": "Lenore - Syrah from Washington State"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Syrah",
+        "top": 492
+      },
+      "menu":
+      {
+        "label": "Syrah",
+        "top": 492
+      },
+      "location":
+      [
+        "Back Service Shelf",
+        "Center Bar Shelf",
+        "Front Service Shelf"
+      ],
+      "price":
+      {
+        "glass": 12,
+        "carafe": 34,
+        "big carafe": 64
+      }
+    }
+  },
+  {
+    "id": 10,
+    "sequence": 10,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Champagne"
+    }
+  },
+  {
+    "id": 11,
+    "sequence": 11,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Chianti Cl"
+    },
+    "data":
+    {
+      "alias": "Sangiovese or Chianti",
+      "type": "red",
+      "variety":
+      [
+        {
+          "Sangiovese": 90,
+          "Canaiolo": 5,
+          "Mouvedre": 5
+        }
+      ],
+      "producer": "Podere Il Palazzino",
+      "vintage": 2013,
+      "region": "Tuscany",
+      "country": "Italy",
+      "properties":
+      {
+        "color": "Bright Ruby",
+        "bouquet": "Bing cherries, wild rasperries and strawberries, leather, moist earth and note of almonds",
+        "palate": "Bright cherries, edged in rosemary and earth notes. Firm tannins give structure to the soft, juicy fruit."
+      },
+      "blurb":
+      {
+        "body": "Light to Medium",
+        "fruit": "Bing cherries, wild berries with rosemary and earth tones",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "podere-il-palazzino.jpg",
+        "label": "Argenina - Chianti Classico"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Sangiovese",
+        "top": 399
+      },
+      "menu":
+      {
+        "label": "Sangiovese",
+        "top": 413
+      },
+      "location":
+      [
+        "Back Service Shelf",
+        "Front Service Shelf"
+      ],
+      "price":
+      {
+        "glass": 13,
+        "carafe": 37,
+        "big carafe": 69
+      }
+    }
+  },
+  {
+    "id": 12,
+    "sequence": 12,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Leon Bordeaux"
+    },
+    "data":
+    {
+      "alias": "Bordeaux Blend or Cabernet Sauvignon",
+      "type": "red",
+      "variety":
+      [
+        {
+          "Grenache": 70,
+          "Syrah": 25,
+          "Mouvedre": 5
+        }
+      ],
+      "producer": "Chateau Carignan",
+      "vintage": 2012,
+      "region": "Bordeaux",
+      "country": "France",
+      "properties":
+      {
+        "color": "Deep purple",
+        "bouquet": "black plums, currants and red berries. Spice box elements come through on the finish.",
+        "palate": "Full body wine, black berries, dark cherries fruits, dark cocoa notes, chewy tannins and long finish"
+      },
+      "blurb":
+      {
+        "body": "full",
+        "fruit": "ripe black berries, cigar box, cedar",
+        "other note": "velevty tannins with great length. Farmed sutainably"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "chateau-carignan.jpg",
+        "label": "Chateau Carignan - Cadillac"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Bordeaux Blend",
+        "top": 526
+      },
+      "menu":
+      {
+        "label": "Bordeaux Blend",
+        "top": 526
+      },
+      "location":
+      [
+        "Back Service Shelf",
+        "Front Service Shelf"
+      ],
+      "price":
+      {
+        "glass": 13,
+        "carafe": 37,
+        "big carafe": 69
+      }
+    }
+  },
+  {
+    "id": 13,
+    "sequence": 13,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Prosecco"
+    },
+    "data":
+    {
+      "alias": "Prosecco or Spumante",
+      "type": "sparkling",
+      "variety":
+      [
+        {
+          "Glera": 100
+        }
+      ],
+      "producer": "Pasqua",
+      "vintage": 0,
+      "region": "",
+      "country": "Italy",
+      "properties":
+      {
+        "color": "",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "pasqua.jpg",
+        "label": "Prosecco - Pasqua"
+      },
+      "serving":
+      {
+        "glass": "flute",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Prosecco",
+        "top": 78
+      },
+      "menu":
+      {
+        "label": "Prosecco",
+        "top": 50
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 10,
+        "carafe": "N/A",
+        "big carafe": "N/A"
+      }
+    }
+  },
+  {
+    "id": 14,
+    "sequence": 14,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL TAP Rose"
+    },
+    "data":
+    {
+      "alias": "Rosé, Rosada or Rosato",
+      "type": "rose",
+      "variety":
+      [
+        {
+          "Cinsault": 45,
+          "Grenache": 30,
+          "Syrah": 25
+        }
+      ],
+      "producer": "Hecht & Bannier",
+      "vintage": 2013,
+      "region": "Provence",
+      "country": "France",
+      "properties":
+      {
+        "color": "Light Salmon",
+        "bouquet": "Floral nose with not of small red berries",
+        "palate": "Medium bodied with flavors of ornage zest, cherry and white pepper and a round creamy finish"
+      },
+      "blurb":
+      {
+        "body": "medium",
+        "fruit": "cherry, strawberry",
+        "other note": "mineral driven"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": ".jpg",
+        "label": ""
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Syrah/Grenache",
+        "top": 339
+      },
+      "menu":
+      {
+        "label": "Grenache/Cinsault",
+        "top": 321
+      },
+      "location":
+      [
+        "On Tap"
+      ],
+      "price":
+      {
+        "glass": 11,
+        "carafe": 32,
+        "big carafe": 60
+      }
+    }
+  },
+  {
+    "id": 15,
+    "sequence": 15,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Chan Rose"
+    },
+    "data":
+    {
+      "alias": "Rose or Merlot Blanc",
+      "type": "rose",
+      "variety":
+      [
+        {
+          "Merlot": 100
+        }
+      ],
+      "producer": "Channing Daughters",
+      "vintage": 2013,
+      "region": "Long Island, NY",
+      "country": "USA",
+      "properties":
+      {
+        "color": "Medium copper, light pink",
+        "bouquet": "black raspberries, lilac",
+        "palate": "red fruit and violets"
+      },
+      "blurb":
+      {
+        "body": "medium",
+        "fruit": "black raspberries & lilacs",
+        "other note": "persistent, zingy finish"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "channing-daughters.jpg",
+        "label": "Rosato - Merlot"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "",
+        "top": 0
+      },
+      "menu":
+      {
+        "label": "Merlot",
+        "top": 305
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 13,
+        "carafe": 37,
+        "big carafe": 69
+      }
+    }
+  },
+  {
+    "id": 16,
+    "sequence": 16,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Bouchard Char"
+    },
+    "data":
+    {
+      "alias": "Chardonnay, Aubaine, Beaunois, Gamay Blanc",
+      "type": "white",
+      "variety":
+      [
+        {
+          "Chardonnay": 100
+        }
+      ],
+      "producer": "Bouchard Pere & Fils",
+      "vintage": 2013,
+      "region": "Cote d'Or",
+      "country": "France",
+      "properties":
+      {
+        "color": "Golden Yellow",
+        "bouquet": "White peach and pear. A refreshing balance of stoneynesss with a touch of oak",
+        "palate": "Granny Smith apples, pear, lemon zest with nice minerality and a touch of vanilla"
+      },
+      "blurb":
+      {
+        "body": "full",
+        "fruit": "Granny Smith apple and pear",
+        "other note": "A balanced wine of fleshy fruit, good acidity and subtle use of oak"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "bouchard-pere-fils.jpg",
+        "label": "Bourgogne - Chardonnay"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": "serve chilled"
+      },
+      "board":
+      {
+        "label": "Chardonnay",
+        "top": 295
+      },
+      "menu":
+      {
+        "label": "Chardonnay",
+        "top": 263
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 13,
+        "carafe": 37,
+        "big carafe": 69
+      }
+    }
+  },
+  {
+    "id": 17,
+    "sequence": 17,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Gruner"
+    },
+    "data":
+    {
+      "alias": "Gruner or Veltliner",
+      "type": "white",
+      "variety":
+      [
+        {
+          "Gruner Veltliner": 100
+        }
+      ],
+      "producer": "Schlosskellerei Gobelburg",
+      "vintage": 2016,
+      "region": "Kamptal",
+      "country": "Austria",
+      "properties":
+      {
+        "color": "Pale Yellow",
+        "bouquet": "Apricot, greengage plums, White pepper",
+        "palate": "Myer lemon, apricots, fruit is in balance with acidity. Good length."
+      },
+      "blurb":
+      {
+        "body": "medium to full",
+        "fruit": "Myer lemon, plum, apricot",
+        "other note": "bright acidity balances fruit. Grown on the site of a 12th C. monastery that first planted the grapes"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "gobelsburg.jpg",
+        "label": "Gobelsburg - Gruner Veltliner"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": "serve chilled"
+      },
+      "board":
+      {
+        "label": "Gruner Veltliner",
+        "top": 264
+      },
+      "menu":
+      {
+        "label": "Gruner Veltliner",
+        "top": 246
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 14,
+        "carafe": 40,
+        "big carafe": 75
+      }
+    }
+  },
+  {
+    "id": 18,
+    "sequence": 18,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Pinot Grigio"
+    },
+    "data":
+    {
+      "alias": "Pinot Grigio ( or gris ) or Grauburgunder",
+      "type": "white",
+      "variety":
+      [
+        {
+          "Pinot Grigio": 100
+        }
+      ],
+      "producer": "Salvalai",
+      "vintage": 2016,
+      "region": "Veneto",
+      "country": "Italy",
+      "properties":
+      {
+        "color": "Bright Straw Yellow",
+        "bouquet": "Fresh Bouquet of Fruit and Flowers",
+        "palate": "Fragrant, dry, zesty, well-orchestrated, well-balanced with persistent hints of fruit"
+      },
+      "blurb":
+      {
+        "body": "light",
+        "fruit": "Peach and tangerine",
+        "other note": "Fragrant, crisp and zesty"
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "salvalai.jpg",
+        "label": "Salvalai - Pinot Grigio"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Pinot Grigio",
+        "top": 170
+      },
+      "menu":
+      {
+        "label": "Pinot Grigio",
+        "top": 135
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 15,
+        "carafe": 46,
+        "big carafe": 87
+      }
+    }
+  },
+  {
+    "id": 19,
+    "sequence": 19,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Rkatsiteli"
+    },
+    "data":
+    {
+      "type": "white",
+      "variety":
+      [
+        {
+          "Rkatsiteli": 100
+        }
+      ],
+      "producer": "Dr. Konstantin Frank",
+      "vintage": 2016,
+      "region": "Finger Lakes, NY",
+      "country": "USA",
+      "properties":
+      {
+        "color": "Pale Yellow, Green",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "konstantin-frank.jpg",
+        "label": "Dr. Konstantin Frank - Rkatsiteli"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Rkatsiteli",
+        "top": 200
+      },
+      "menu":
+      {
+        "label": "Rkatsiteli",
+        "top": 215
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Center Bar Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 12,
+        "carafe": 34,
+        "big carafe": 64
+      }
+    }
+  },
+  {
+    "id": 20,
+    "sequence": 20,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL TAP Reisling"
+    },
+    "data":
+    {
+      "type": "red",
+      "variety":
+      [
+        {
+          "Grenache": 70,
+          "Syrah": 25,
+          "Mouvedre": 5
+        }
+      ],
+      "producer": "Gotham Project",
+      "vintage": 2015,
+      "region": "Finger Lakes, NY",
+      "country": "USA",
+      "properties":
+      {
+        "color": "",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "",
+        "label": ""
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Reisling/Chardonnay",
+        "top": 216
+      },
+      "menu":
+      {
+        "label": "Reisling/Chardonnay",
+        "top": 168
+      },
+      "location":
+      [
+        "On Tap"
+      ],
+      "price":
+      {
+        "glass": 10,
+        "carafe": 29,
+        "big carafe": 54
+      }
+    }
+  },
+  {
+    "id": 21,
+    "sequence": 21,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Barbera"
+    },
+    "data":
+    {
+      "type": "red",
+      "variety":
+      [
+        {
+          "Barbera": 100
+        }
+      ],
+      "producer": "Dante Rivetti",
+      "vintage": 2012,
+      "region": "Piedmont",
+      "country": "Italy",
+      "properties":
+      {
+        "color": "Ruby Red with Purple Highlights",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "dante-rivetti.jpg",
+        "label": "Mara - Barbera d'Alba"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Barbera",
+        "top": 477
+      },
+      "menu":
+      {
+        "label": "Barbera",
+        "top": 429
+      },
+      "location":
+      [
+        "Back Service Shelf",
+        "Front Service Shelf"
+      ],
+      "price":
+      {
+        "glass": 13,
+        "carafe": 37,
+        "big carafe": 69
+      }
+    }
+  },
+  {
+    "id": 22,
+    "sequence": 22,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Cab Aviary"
+    },
+    "data":
+    {
+      "type": "red",
+      "variety":
+      [
+        {
+          "Cabernet": 90,
+          "Merlot": 7,
+          "Petit Syrah": 3
+        }
+      ],
+      "producer": "Aviary",
+      "vintage": 2015,
+      "region": "Napa Valley, CA",
+      "country": "USA",
+      "properties":
+      {
+        "color": "Deep Garnet",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "aviary.jpg",
+        "label": "Aviary - Cabernet Sauvignon"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Cabernet Sauvignon",
+        "top": 509
+      },
+      "menu":
+      {
+        "label": "Cabernet Sauvignon",
+        "top": 509
+      },
+      "location":
+      [
+        "Back Service Shelf",
+        "Front Service Shelf"
+      ],
+      "price":
+      {
+        "glass": 15,
+        "carafe": 43,
+        "big carafe": 81
+      }
+    }
+  },
+  {
+    "id": 23,
+    "sequence": 23,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Malbec"
+    },
+    "data":
+    {
+      "type": "red",
+      "variety":
+      [
+        {
+          "Nebbiolo": 100
+        }
+      ],
+      "producer": "Enrique Foster",
+      "vintage": 2016,
+      "region": "Mendoza",
+      "country": "Argentina",
+      "properties":
+      {
+        "color": "Ruby Red, Flushed with Violet",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "ique-foster.jpg",
+        "label": "Ique"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Malbec",
+        "top": 461
+      },
+      "menu":
+      {
+        "label": "Malbec",
+        "top": 478
+      },
+      "location":
+      [
+        "Back Service Shelf",
+        "Front Service Shelf"
+      ],
+      "price":
+      {
+        "glass": 11,
+        "carafe": 37,
+        "big carafe": 60
+      }
+    }
+  },
+  {
+    "id": 24,
+    "sequence": 24,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Cava"
+    },
+    "data":
+    {
+      "alias": "",
+      "type": "sparkling",
+      "variety":
+      [
+        {
+          "Pinot Noir": 100
+        }
+      ],
+      "producer": "L'Umami",
+      "vintage": 2015,
+      "region": "Willamette Valley, OR",
+      "country": "USA",
+      "properties":
+      {
+        "color": "Ruby Red",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "jaume-serra.jpg",
+        "label": "jaume serra - cristalino"
+      },
+      "serving":
+      {
+        "glass": "flute",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "",
+        "top": 0
+      },
+      "menu":
+      {
+        "label": "",
+        "top": 0
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 0,
+        "carafe": 0,
+        "big carafe": 0
+      }
+    }
+  },
+  {
+    "id": 25,
+    "sequence": 25,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL L'Umami PN"
+    },
+    "data":
+    {
+      "alias": "",
+      "type": "red",
+      "variety":
+      [
+        {
+          "Pinot Noir": 100
+        }
+      ],
+      "producer": "L'Umami",
+      "vintage": 2015,
+      "region": "Willamette Valley, OR",
+      "country": "USA",
+      "properties":
+      {
+        "color": "Ruby Red",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "lumami.jpg",
+        "label": "L'Umami - Pinot Noir of Oregon"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Pinot Noir",
+        "top": 430
+      },
+      "menu":
+      {
+        "label": "Pinot Noir",
+        "top": 380
+      },
+      "location":
+      [
+        "Back Service Shelf",
+        "Front Service Shelf"
+      ],
+      "price":
+      {
+        "glass": 16,
+        "carafe": 46,
+        "big carafe": 87
+      }
+    }
+  },
+  {
+    "id": 26,
+    "sequence": 26,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Nebbiolo"
+    },
+    "data":
+    {
+      "alias": "",
+      "type": "red",
+      "variety":
+      [
+        {
+          "Nebbiolo": 100
+        }
+      ],
+      "producer": "L'Umami",
+      "vintage": 2015,
+      "region": "Piedmont",
+      "country": "Italy",
+      "properties":
+      {
+        "color": "Ruby Red",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "langhe.jpg",
+        "label": "Langhe - Nebbiolo"
+      },
+      "serving":
+      {
+        "glass": "short",
+        "notes": ""
+      },
+      "board":
+      {
+        "label": "Nebbiolo",
+        "top": 414
+      },
+      "menu":
+      {
+        "label": "Nebbiolo",
+        "top": 396
+      },
+      "location":
+      [
+        "Back Service Shelf",
+        "Front Service Shelf"
+      ],
+      "price":
+      {
+        "glass": 14,
+        "carafe": 40,
+        "big carafe": 75
+      }
+    }
+  },
+  {
+    "id": 27,
+    "sequence": 27,
+    "button":
+    {
+      "icon": "glass",
+      "label": "GL Sparkl Rose"
+    },
+    "data":
+    {
+      "alias": "Sparkling Rose",
+      "type": "sparkling",
+      "variety":
+      [
+        {
+          "Merlot": 60,
+          "Cabernet Sauvignon": 40
+        }
+      ],
+      "producer": "Bedell",
+      "vintage": 2016,
+      "region": "Long Island, NY",
+      "country": "USA",
+      "properties":
+      {
+        "color": "",
+        "bouquet": "",
+        "palate": ""
+      },
+      "blurb":
+      {
+        "body": "",
+        "fruit": "",
+        "other note": ""
+      }
+    },
+    "reference":
+    {
+      "bottle":
+      {
+        "image": "north-fork.jpg",
+        "label": ""
+      },
+      "serving":
+      {
+        "glass": "flute",
+        "notes": "serve chilled"
+      },
+      "board":
+      {
+        "label": "",
+        "top": 92
+      },
+      "menu":
+      {
+        "label": "Sparkling Rose",
+        "top": 65
+      },
+      "location":
+      [
+        "Back Service Fridge",
+        "Front Service Fridge"
+      ],
+      "price":
+      {
+        "glass": 13,
+        "carafe": "N/A",
+        "big carafe": "N/A"
+      }
+    }
+  }
+]

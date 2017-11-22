@@ -1,0 +1,182 @@
+[
+  {
+    "name": "kamikaze",
+    "alias": "",
+    "group": "two liquor drinks",
+    "recipe":
+    [
+      {
+        "count": 6,
+        "name": "vodka",
+        "type": "regular"
+      },
+      {
+        "count": 2,
+        "name": "triple sec"
+      },
+      {
+        "count": 2,
+        "name": "lime cordial"
+      }
+    ],
+    "options":
+    [
+      {
+        "name": "on the rocks",
+        "glass":
+        {
+          "prep": "rocks",
+          "serve": "rocks",
+          "ice": "fill"
+        },
+        "steps":
+        {
+          "garnish": "lime",
+          "straw": "short"
+        }
+      }
+    ],
+    "notes": []
+  },
+
+  {
+    "name": "rob roy",
+    "alias": "scotch manhattan",
+    "group": "manhattan",
+    "recipe":
+    [
+      {
+        "count": "dash",
+        "name": "vermouth",
+        "type": "sweet"
+      },
+      {
+        "count": 8,
+        "name": "whiskey",
+        "type": "scotch"
+      }
+    ],
+    "options":
+    [
+      {
+        "name": "on the rocks",
+        "glass":
+        {
+          "prep": "rocks",
+          "serve": "rocks",
+          "ice": "fill"
+        },
+        "steps":
+        {
+          "garnish": "cherry",
+          "straw": "short"
+        }
+      },
+      {
+        "name": "straight up",
+        "glass":
+        {
+          "prep": "mixing",
+          "serve": "stemmed cocktail",
+          "ice": "half fill"
+        },
+        "steps":
+        {
+          "process": "stir and strain",
+          "garnish": "cherry",
+          "straw": "short"
+        }
+      }
+    ],
+    "notes":
+    [
+      "never shake a manhattan"
+    ]
+  },
+
+  {
+    "name": "slow comfortable screw",
+    "alias": "",
+    "group": "highballs",
+    "recipe":
+    [
+      {
+        "count": 3,
+        "name": "gin",
+        "type": "sloe"
+      },
+      {
+        "count": 3,
+        "name": "liqueur",
+        "type": "southern comfort"
+      },
+      {
+        "count": "fill",
+        "name": "juices",
+        "type": "orange juice"
+      }
+    ],
+    "options":
+    [
+      {
+        "name": "tall",
+        "glass":
+        {
+          "prep": "collins",
+          "serve": "collins",
+          "ice": "fill"
+        },
+        "steps":
+        {
+          "garnish": "",
+          "straw": "long"
+        }
+      }
+    ],
+    "notes":
+    [
+      "1.5 oz"
+    ]
+  },
+
+  {
+    "name": "tequila sunrise",
+    "alias": "",
+    "group": "highballs",
+    "recipe":
+    [
+      {
+        "count": 4,
+        "name": "tequila",
+        "type": "silver"
+      },
+      {
+        "count": "fill",
+        "name": "juices",
+        "type": "orange juice"
+      },
+      {
+        "count": "dash",
+        "name": "grenadine"
+      }
+    ],
+    "options":
+    [
+      {
+        "name": "tall",
+        "glass":
+        {
+          "prep": "collins",
+          "serve": "collins",
+          "ice": "fill"
+        },
+        "steps":
+        {
+          "garnish": "cherry",
+          "straw": "long"
+        }
+      }
+    ],
+    "notes": []
+  }
+]

@@ -1,0 +1,11 @@
+body
+{
+    background-color: black;
+    font-family: "courier", "sans-serif";
+    color: white;
+    margin: 0;
+    border: 0;
+    user-select: none;
+    overflow: hidden;
+}
+

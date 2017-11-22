@@ -1,0 +1,37 @@
+<div class="table grid" ng-init="set( data );">
+    <div class="tr underline">
+        <div class="td separator">
+            <div class="button" ng-click="export( { name: name, value: rows } )" ng-class="{ disabled: !rows.length || rowsForm.$invalid }">{{ label }}</div>
+        </div>
+        <div class="td" ng-repeat="( col, val ) in columns track by $index">
+            <div class="button" ng-click="edit( val )">{{ val.label }}</div>
+        </div>
+        <div class="td heading">
+            <div class="button icon" ng-click="edit();">{{ '+' | unicode }}</div>
+        </div>
+    </div>
+    <div class="tbody" ng-show="columns.length" ng-form="rowsForm">
+        <div class="tr" ng-repeat="( row, data ) in rows track by $index">
+            <div class="td separator"><input style="width: 100px;" name="input" type="text" ng-model="rows[ row ].$schema.label"></div>
+            <div class="td" ng-repeat="( col, val ) in columns" ng-form="colForm"><input name="input" type="{{ val.type }}" style="width: {{ val.width }}px;" ng-model="rows[ row ][ val.label ]" ng-class="{ required: colForm.input.$error.required }" ng-required="val.required"></div>
+            <div class="td">
+                <div class="button icon" ng-click="removeRow( { id: data.$schema.id } );">{{ '-' | unicode }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="tbody" ng-show="columns.length">
+        <div class="tr overline" ng-form="addForm">
+            <div class="td separator"><input style="width: 100px;" type="text" ng-model="add[ '$label' ]"></div>
+            <div class="td" ng-repeat="( col, val ) in columns"><input type="{{ val.type }}" style="width: {{ val.width }}px;" ng-model="add[ val.label ]" ng-class="{ required: val.required }" ng-required="val.required "></div>
+            <div class="td">
+                <div class="button icon" ng-click="addRow( add );" ng-class="{ disabled: addForm.$invalid, required: val.required }">{{ '+' | unicode }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="tr" ng-show="message || !columns.length">
+        <div class="td"></div>
+        <div class="td">
+            <div class="warn">{{ message }}</div>
+        </div>
+    </div>
+</div>

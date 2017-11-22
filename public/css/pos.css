@@ -1,0 +1,40 @@
+.item
+{
+    background-color: yellow;
+    width: 29%;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin: 1px 0 0 1px;
+    cursor: pointer;
+}
+
+.item:hover, .active
+{
+    background-color: gray;
+}
+
+.item .label
+{
+    padding-left: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: black;
+}
+
+.item .icon
+{
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.screen
+{
+    width: 45%;
+    height: 554px;
+    position: relative;
+    left: 0;
+    top: 0;
+}

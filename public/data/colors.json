@@ -1,0 +1,14 @@
+[
+  { "name": "clear", "color": "transparent" },
+  { "name": "white", "color": "#FFFFFF" },
+  { "name": "purple", "color": "#3B2C41" },
+  { "name": "blue", "color": "#0017B2" },
+  { "name": "mint", "color": "#0B8635" },
+  { "name": "gold", "color": "#FDE17E" },
+  { "name": "cream", "color": "#D8C79C" },
+  { "name": "orange", "color": "#FFC032" },
+  { "name": "caramel", "color": "#FFA401" },
+  { "name": "red", "color": "#790908" },
+  { "name": "copper", "color": "#5D2612" },
+  { "name": "chocolate", "color": "#321E15" }
+]

@@ -1,0 +1,43 @@
+.table
+{
+    display: table;
+    border-collapse: collapse;
+    z-index: 10;
+}
+
+.tbody
+{
+    display: table-row-group;
+}
+
+.tr
+{
+    display: table-row;
+    min-height: 28px;
+}
+
+.td
+{
+    display: table-cell;
+    padding: 1px 2px 0 1px;
+    margin: 0 1px 1px 0;
+    line-height: 26px;
+}
+
+.cell
+{
+    min-width: 16px;
+    min-height: 16px;
+    padding: 2px;
+    margin-right: 1px;
+}
+
+.highlight
+{
+    background-color: #336666;
+}
+
+.heading
+{
+    color: yellow;
+}

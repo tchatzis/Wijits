@@ -1,0 +1,9 @@
+<div ng-controller="colorCtrl" class="element">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="constrain float">
+        <div ng-repeat="item in data track by $index" class="center color float" ng-click="select( { name: name, value: item } )" ng-class="{ selected: item === selected }" style="background-color: {{ item.color }};" title="{{ item.name }}"> </div>
+    </div>
+
+    <div class="unfloat"></div>
+</div>

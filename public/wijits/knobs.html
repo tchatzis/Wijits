@@ -1,0 +1,24 @@
+<div ng-controller="knobCtrl" class="element">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="float" ng-repeat="control in data.controls track by $index">
+        <div class="column" ng-init="item = control.value; values[ control.name ] = control.value">
+            <div class="unfloat small value">{{ item | precision: control.factor || 0 }}</div>
+
+            <div class="pad float">
+                <div class="{{ control.class }}" ng-mousedown="knob.event( { event: $event, scope: this } )" element="{{ control }}">
+                    <div class="arrow">◀</div>
+                </div>
+            </div>
+
+            <div class="unfloat small">{{ control.label }}</div>
+        </div>
+    </div>
+
+
+    <div class="controls">
+        <div class="button center float" ng-click="export( { name: name, label: label, value: values, tag: { tag: 'eq', type: 'eq', controls: data.controls } } )">{{ '✓' | unicode }}</div>
+    </div>
+
+    <div class="unfloat"></div>
+</div>

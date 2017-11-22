@@ -1,0 +1,173 @@
+[
+  {
+    "name": "gin",
+    "types":
+    [
+      {
+        "name": "regular",
+        "brands":
+        [
+          {
+            "name": "gordon's",
+            "grade": "C",
+            "content": 40,
+            "color": "yellow"
+          },
+          {
+            "name": "bombay sapphire",
+            "grade": "B",
+            "content": 40,
+            "color": "blue"
+          }
+        ]
+      },
+      {
+        "name": "sloe",
+        "brands":
+        [
+          {
+            "name": "plymouth",
+            "label": "sloe gin",
+            "grade": "C",
+            "content": 40,
+            "color": "yellow"
+          },
+          {
+            "name": "y",
+            "grade": "B",
+            "content": 40,
+            "color": "blue"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "name": "tequila",
+    "types":
+    [
+      {
+        "name": "silver",
+        "brands":
+        [
+          {
+            "name": "jose cuervo",
+            "label": "silver",
+            "grade": "C",
+            "content": 40,
+            "color": "white",
+            "origin": "mexico"
+          }
+        ]
+      },
+      {
+        "name": "gold",
+        "brands":
+        [
+          {
+            "name": "jose cuervo",
+            "label": "anejo",
+            "grade": "D",
+            "content": 40,
+            "color": "yellow",
+            "origin": "mexico"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "name": "vodka",
+    "types":
+    [
+      {
+        "name": "regular",
+        "brands":
+        [
+          {
+            "name": "absolut",
+            "grade": "C",
+            "content": 40,
+            "color": "blue"
+          },
+          {
+            "name": "stolichnaya",
+            "grade": "B",
+            "content": 40,
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "name": "lemon",
+        "brands":
+        [
+          {
+            "name": "absolut",
+            "label": "citron",
+            "grade": "C",
+            "content": 40,
+            "color": "yellow"
+          },
+          {
+            "name": "stolichnaya",
+            "label": "Lemon",
+            "grade": "B",
+            "content": 40,
+            "color": "yellow"
+          }
+        ]
+      },
+      {
+        "name": "vanilla",
+        "brands":
+        [
+          {
+            "name": "stolichnaya",
+            "label": "vanilla",
+            "grade": "B",
+            "content": 40,
+            "color": "bisque"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "name": "whiskey",
+    "types":
+    [
+      {
+        "name": "canadian",
+        "brands":
+        [
+          {
+            "name": "seagrams",
+            "label": "7",
+            "grade": "B",
+            "content": 40,
+            "color": "white",
+            "origin": "canada"
+          }
+        ]
+      },
+      {
+        "name": "scotch",
+        "brands":
+        [
+          {
+            "name": "johnnie walker",
+            "label": "red",
+            "grade": "D",
+            "content": 40,
+            "color": "red",
+            "origin": "scotland"
+          }
+        ]
+      }
+    ]
+  }
+]

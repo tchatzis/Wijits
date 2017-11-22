@@ -1,0 +1,22 @@
+<ul ng-repeat="( key, val ) in selected.data track by $index" ng-init="parent = ( selected.path | parent ); newvalues = values[ key ]">
+    <div ng-show="( val | deeper )" class="label capitalize ">
+        <div class="float li">&nbsp;</div>
+        <div class="float"> {{ key }}</div>
+    </div>
+
+    <li ng-show="!( val | deeper )">
+        <div ng-if="!shown" ng-init="$parent.shown = true" class="parent capitalize">{{ parent }}</div>
+
+        <div>
+            <div class="label capitalize float">
+                <div class="float li">&nbsp;</div>
+                <div class="float"> {{ key }}</div>
+            </div>
+
+            <input ng-model="values[ key ]" ng-keyup="update( { path: path, id: key, el: $event.target } )">
+            <input ng-init="oldvalue = val" type="button" value="{{ '⤾' | unicode }}" ng-click="values[ key ] = oldvalue">
+        </div>
+    </li>
+
+    <field ng-if="val | deeper" selected="{ data: val, path: path + '/' + key }" values="newvalues" update="update( { path: path, id: id, el: el } )"></field>
+</ul>

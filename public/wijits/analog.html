@@ -1,0 +1,15 @@
+<div ng-controller="analogCtrl" class="element">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="analog bordered float">
+        <div class="scale">
+            <div class="pivot">
+                <div class="needle" ng-init="listen( name, data.listen )" element></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="float small value">{{ value | precision: value || 1 }}</div>
+
+    <div class="unfloat"></div>
+</div>

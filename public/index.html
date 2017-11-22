@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Titus Chatzis - Javascript Developer</title>
+        <meta charset="UTF-8">
+        <base href="/">
+        <!-- load dependencies -->
+        <script src="js/loader.js"></script>
+    </head>
+
+    <body ng-app="bartender-reference" ng-controller="rootCtrl">
+        <div class="menu pad">
+            <div class="button" onclick="location.href = '/'">Reload</div>
+            <div class="button" ng-click="location( '/' )">Back</div>
+
+            <!--<div ng-show="login.authenticated">
+                <div class="button" ng-click="location( '/wines' )">Wines</div>
+                <tree fn="'filters'" list="liquors" colors="colors" selected="selected" set="set( { fn: fn, data: data, selected: selected, scope: scope } )"></tree>
+
+            </div>-->
+        </div>
+
+
+        <div class="details pad scroll">
+            <div class="view" ng-view=""></div>
+        </div>
+    </body>
+</html>

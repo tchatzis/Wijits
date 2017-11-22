@@ -1,0 +1,13 @@
+<div class="element" ng-controller="switchCtrl">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="float">
+        <div class="switch" ng-click="toggle( name )" ng-init="item = data; values[ name ] = data">
+            <div class="slider" ng-class="{ enabled: values[ name ] }">
+                <div class="on"></div>
+                <div class="toggle"></div>
+                <div class="off"></div>
+            </div>
+        </div>
+    </div>
+</div>

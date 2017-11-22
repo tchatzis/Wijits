@@ -1,0 +1,11 @@
+<div ng-controller="meterCtrl" class="element" ng-init="listen( name, data.listen )">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="meter heat float" ng-init="b = 100;">
+        <div class="bar" ng-repeat="bar in bars( b ) track by $index" ng-class="{ obscure: $index / b > value }" title="{{ $index }}" ng-mousedown="drag( name, data.listen )">{{ bar }}</div>
+    </div>
+
+    <div class="float small value">{{ ( value || 0 ) | precision: value || 1 }}</div>
+
+    <div class="unfloat"></div>
+</div>

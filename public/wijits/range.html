@@ -1,0 +1,14 @@
+<div ng-controller="rangeCtrl" class="element">
+    <div class="label capitalize float" ng-init="set( data )">{{ label }}</div>
+
+    <div class="range bordered float" element="range">
+        <div class="limit" element="limit">
+            <div class="handle lower" element="lower">◄</div>
+            <div class="handle upper" element="upper">►</div>
+        </div>
+    </div>
+
+    <div class="float small value nowrap">{{ values.lower | precision: 2 }} to {{ values.upper | precision: 2 }}</div>
+
+    <div class="unfloat"></div>
+</div>

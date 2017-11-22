@@ -1,0 +1,115 @@
+<div class="pad" ng-init="tabbing( { cocktail: cocktail.name, index: 0 } )" ng-controller="editCocktailsCtrl">
+    <table class="bordered scroll" ng-dblclick="record.update( { name: 'cocktails', data: cocktail } )">
+        <thead class="bordered" ng-form="cocktailForm">
+        <tr>
+            <td class="title"><input type="text" name="name" ng-model="cocktail.name" placeholder="name" ng-required="true" ng-class="{ invalid: cocktailForm.name.$error.required, valid: !cocktailForm.name.$error.required }" style="width: 100%;"></td>
+        </tr>
+        <tr>
+            <td class="subtitle"><input type="text" ng-model="cocktail.alias" placeholder="alias" style="width: 100%;"></td>
+        </tr>
+        <tr>
+            <td class="group"><select ng-options="option for option in ( datalists | key: 'group' )" ng-model="cocktail.group"></select></td>
+        </tr>
+        </thead>
+        <!-- glass -->
+        <tbody class="bordered">
+        <tr>
+            <th colspan="2" class="subtitle">glass</th>
+        </tr>
+        <tr ng-repeat="option in cocktail.options track by $index" ng-show="tab[ cocktail.name ] == $index">
+            <td colspan="2" class="span nowrap">
+                <div class="float"><select ng-options="item for item in ( datalists | key: 'ice' )" ng-model="option.glass.ice"></select></div>
+                <div class="float"><select ng-options="item for item in ( datalists | key: 'glass' )" ng-model="option.glass.prep"></select> glass with ice.</div>
+            </td>
+        </tr>
+        </tbody>
+        <!-- recipe -->
+        <tbody class="bordered rows shortened scroll">
+        <tr>
+            <th colspan="4" class="subtitle" ng-click="expand( 'recipe' )">recipe</th>
+        </tr>
+        <tr ng-class="{ collapsed: selected.expanded !== 'recipe' }">
+            <th>measure</th>
+            <th>ingredient</th>
+            <th class="hidden">name</th>
+            <th class="hidden">type</th>
+            <th class="hidden">brand</th>
+            <!--<th class="hidden">label</th>-->
+        </tr>
+        <tr ng-class="{ collapsed: selected.expanded !== 'recipe' }" ng-repeat="item in cocktail.recipe track by $index" ng-form="recipe{{ $index }}" valign="top">
+            <td><select ng-model="item.count" ng-options="measure.count as measure.name for measure in measures" ng-required="true"></select></td>
+            <td ng-show="!selected.mode.select" class="button nowrap" ng-click="mode( 'select', true, this )">{{ item.brands }} {{ item.types }} {{ item.liquors }}</td>
+            <td ng-show="true">{{ !selected.mode.select }}</td>
+            <td ng-show="selected.mode.select"><tree fn="'item'" list="liquors" colors="colors" selected="selected" data="item" set="set( { fn: fn, data: data, selected: selected, scope: scope } )"></tree></td>
+            <td class="hidden"><input type="text" ng-model="item.liquors" ng-required="true"></td>
+            <td class="hidden"><input type="text" ng-model="item.types"></td>
+            <td class="hidden"><input type="text" ng-model="item.brands"></td>
+            <!--<td class="hidden"><input type="text" ng-model="item.brands.label"></td>-->
+            <td><input type="button" class="add" value="{{ '✓' | unicode }}" ng-click="row.update( cocktail.recipe, item, $index )" ng-disabled="$eval( 'recipe' + $index + '.$invalid' )"></td>
+            <td><input type="button" class="remove" value="-" ng-click="row.remove( cocktail.recipe, item )"></td>
+        </tr>
+        <tr ng-init="item = {}" ng-class="{ collapsed: selected.expanded !== 'recipe' }" ng-form="recipe{{ cocktail.recipe.length }}" valign="top">
+            <td><select class="addrow" ng-model="item.count" ng-options="measure.count as measure.name for measure in measures" ng-required="true"></select></td>
+            <td ng-show="!selected.mode.select"></td>
+            <td><tree fn="'item'" list="liquors" colors="colors" selected="selected" set="set( { fn: fn, data: data, selected: selected, scope: scope } )"></tree></td>
+            <td class="hidden"><input type="text" ng-model="item.liquors" ng-required="true"></td>
+            <td class="hidden"><input type="text" ng-model="item.types"></td>
+            <td class="hidden"><input type="text" ng-model="item.brands"></td>
+            <!--<td class="hidden"><input type="text" ng-model="item.brands.label"></td>-->
+            <td><input type="button" class="add" value="+" ng-click="add( cocktail.recipe, item ); item = {}" ng-disabled="$eval( 'recipe' + cocktail.recipe.length + '.$invalid' )"></td>
+            <td><input type="button" class="remove" value="-" ng-click="item = {}"></td>
+        </tr>
+        </tbody>
+        <!-- options -->
+        <tbody class="bordered rows">
+        <tr>
+            <th colspan="4" class="subtitle" ng-click="expand( 'options' )">options</th>
+        </tr>
+        <tr ng-class="{ collapsed: selected.expanded !== 'options' }">
+            <th>option</th>
+            <th>prep glass</th>
+            <th>serving glass</th>
+            <th>ice</th>
+        </tr>
+        <tr ng-class="{ collapsed: selected.expanded !== 'options' }" ng-repeat="item in cocktail.options track by $index" ng-form="options{{ $index }}">
+            <td><select ng-options="option for option in ( datalists | key: 'options' )" ng-model="item.name" ng-required="true"></select></td>
+            <td><select ng-options="option for option in ( datalists | key: 'glass' )" ng-model="item.glass.prep" ng-required="true"></select></td>
+            <td><select ng-options="option for option in ( datalists | key: 'glass' )" ng-model="item.glass.serve" ng-required="true"></select></td>
+            <td><select ng-options="option for option in ( datalists | key: 'ice' )" ng-model="item.glass.ice" ng-required="true"></select></td>
+            <td><input type="button" class="add" value="{{ '✓' | unicode }}" ng-click="row.update( cocktail.options, item, $index )" ng-disabled="$eval( 'options' + $index + '.$invalid' )"></td>
+            <td><input type="button" class="remove" value="-" ng-click="row.remove( cocktail.options, item )"></td>
+        </tr>
+        <tr ng-init="item = {}" ng-class="{ collapsed: selected.expanded !== 'options' }" ng-form="options{{ cocktail.options.length }}">
+            <td><select class="addrow" ng-options="option for option in ( datalists | key: 'options' )" ng-model="item.name" ng-required="true"></select></td>
+            <td><select class="addrow" ng-options="option for option in ( datalists | key: 'glass' )" ng-model="item.glass.prep" ng-required="true"></select></td>
+            <td><select class="addrow" ng-options="option for option in ( datalists | key: 'glass' )" ng-model="item.glass.serve" ng-required="true"></select></td>
+            <td><select class="addrow" ng-options="option for option in ( datalists | key: 'ice' )" ng-model="item.glass.ice" ng-required="true"></select></td>
+            <td><input type="button" class="add" value="+" ng-click="add( cocktail.options, item ); item = {}" ng-disabled="$eval( 'options' + cocktail.options.length + '.$invalid' )"></td>
+            <td><input type="button" class="remove" value="-" ng-click="item = {}"></td>
+        </tr>
+        </tbody>
+        <!-- notes -->
+        <tbody class="bordered rows">
+        <tr>
+            <th class="subtitle" ng-click="expand( 'notes' )">notes</th>
+        </tr>
+        <tr ng-class="{ collapsed: selected.expanded !== 'notes' }" ng-repeat="note in cocktail.notes track by $index" ng-form="notes{{ $index }}">
+            <td><input type="text" ng-model="note" size="50" ng-required="true"></td>
+            <td><input type="button" class="add" value="{{ '✓' | unicode }}" ng-click="row.update( cocktail.notes, note, $index )" ng-disabled="$eval( 'notes' + $index + '.$invalid' )"></td>
+            <td><input type="button" class="remove" value="-" ng-click="row.remove( cocktail.notes, note )"></td>
+        </tr>
+        <tr ng-class="{ collapsed: selected.expanded !== 'notes' }" ng-form="notes{{ cocktail.notes.length }}">
+            <td><input type="text" ng-model="note" size="50" ng-required="true"></td>
+            <td><input type="button" class="add" value="+" ng-click="add( cocktail.notes, note ); note = null" ng-disabled="$eval( 'notes' + cocktail.notes.length + '.$invalid' )"></td>
+            <td><input type="button" class="remove" value="-" ng-click="note = null"></td>
+        </tr>
+        </tbody>
+        <!-- tabs -->
+        <tfoot>
+        <tr>
+            <td class="tab nowrap capitalize" ng-class="{ active: tab[ cocktail.name ] == $index }" ng-repeat="option in cocktail.options track by $index" ng-click="tabbing( { cocktail: cocktail.name, index: $index } )">{{ option.name }}</td>
+            <td class="tab fill"></td>
+        </tr>
+        </tfoot>
+    </table>
+</div>

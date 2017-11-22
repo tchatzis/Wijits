@@ -1,0 +1,39 @@
+<div ng-controller="eqCtrl" class="element">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="float">
+        <div>
+            <div class="rotate">
+                <div class="unfloat row nowrap spread" style="width: 100%">
+                    <div class="float small unrotate">{{ data.unit.x }}</div>
+                    <div class="float spread">
+                        <div class="float small unrotate">-{{ data.max }} ▶</div>
+                        <div class="float small unrotate">0 ▶</div>
+                        <div class="float small unrotate">{{ +data.max }} ▶</div>
+                    </div>
+                    <div class="float small unrotate">{{ data.unit.y }}</div>
+                </div>
+
+                <div ng-repeat="control in data.controls track by $index">
+                    <div ng-controller="sliderCtrl" ng-init="item = control.value; values[ control.name ] = control.value">
+                        <div class="unfloat row">
+                            <div class="float small">{{ control.label }}</div>
+
+                            <div class="float">
+                                <input type="range" ng-model="item" min="{{ -data.max }}" max="{{ data.max }}" step="{{ data.step || 1 }}" ng-mouseup="select( { name: name, child: control.name, value: item, step: data.step } )" ng-dblclick="reset( data.value )">
+                            </div>
+
+                            <div class="float small value unrotate">{{ item | precision: data.step || 1 }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="button center float" ng-click="export( { name: name, label: label, value: values, tag: { tag: 'eq', type: 'eq' } } )">{{ '✓' | unicode }}</div>
+    </div>
+
+    <div class="unfloat"></div>
+</div>

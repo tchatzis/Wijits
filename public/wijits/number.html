@@ -1,0 +1,10 @@
+<div ng-controller="numberCtrl" class="element" ng-init="set( data );">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="float">
+        <input type="range" min="{{ data.min }}" max="{{ data.max }}" step="{{ data.step }}" ng-model="data.value" style="width: 215px;" ng-mouseup="export( { name: label, value: data.value } );">
+        <input type="number" min="{{ data.min }}" max="{{ data.max }}" step="{{ data.step }}" ng-model="data.value" ng-required="data.required" ng-mouseup="export( { name: label, value: data.value } );">
+    </div>
+
+    <div class="unfloat"></div>
+</div>

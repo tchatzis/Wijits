@@ -1,0 +1,19 @@
+<div ng-controller="carouselCtrl" class="element" ng-init="control = data; control.name = name">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="float">
+        <div class="viewer" ng-style="{{ styles( { name: 'viewer', class: control.class } ) }}">
+            <div class="{{ control.class }}" ng-style="{{ styles( { name: 'self', class: control.class } ) }}">
+                <div ng-repeat="item in items track by $index" class="item nowrap" ng-click="select( { name: control.name, value: item.index } )" ng-style="{{ styles( { name: 'item', class: control.class, item: item } ) }}">
+                    {{ item.display }}
+                </div>
+            </div>
+        </div>
+
+        <div class="pad" ng-show="control.display.buttons">
+            <div ng-repeat="item in master track by $index" ng-click="select( { name: control.name, value: $index } )" class="float micro" ng-class="{ active: ( items | find : { index: $index } ), on: selected === $index }"></div>
+        </div>
+    </div>
+
+    <div class="unfloat"></div>
+</div>

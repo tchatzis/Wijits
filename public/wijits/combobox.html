@@ -1,0 +1,33 @@
+<div ng-controller="comboboxCtrl" class="element" ng-init="control = data; control.name = name; new = {};">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="float">
+        <div class="relative">
+            <div class="mask unfloat" ng-show="item === flag" ng-form="form">
+                <div class="unfloat" ng-repeat="input in inputs" ng-form="inner">
+                    <input name="input" type="text" ng-model="new[ input ]" placeholder="enter new {{ input }}" ng-required="true" ng-class="{ required: inner.input.$error.required }">
+                </div>
+            </div>
+
+            <div class="absolute nowrap">
+                <div class="float">
+                    <select ng-model="item" ng-init="item = control.selected.value;" ng-change="select( { name: control.name, value: item } )">
+                        <option ng-show="control.selected.key" ng-repeat="option in items | orderBy: control.selected.key">{{ text( option ) }}</option>
+                        <option ng-show="!control.selected.key" ng-repeat="option in items">{{ text( option ) }}</option>
+                        <option ng-show="data.display.grow" value="{{ flag }}" class="warn">ADD NEW ITEM</option>
+                    </select>
+                </div>
+                <div ng-show="message" class="warn">{{ message }}</div>
+            </div>
+
+            <div class="unfloat">{{ input }}</div>
+        </div>
+    </div>
+
+    <div class="controls" ng-show="item === flag">
+        <div class="button center float" ng-click="append( new ); new = {};" ng-class="{ disabled: form.$invalid }">{{ '✓' | unicode }}</div>
+    </div>
+
+    <div class="unfloat"></div>
+</div>
+

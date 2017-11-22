@@ -1,0 +1,9 @@
+<div ng-controller="multiCtrl" class="element">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="constrain float">
+        <div ng-repeat="item in data" class="button float" ng-click="toggle( { name: name, value: item } )" ng-class="{ on: selected( item ) }">{{ item }}</div>
+    </div>
+
+    <div class="unfloat"></div>
+</div>

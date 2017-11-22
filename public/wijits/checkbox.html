@@ -1,0 +1,9 @@
+<div ng-controller="multiCtrl" class="element">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="float multi" ng-click="toggle( { name: name, value: item } )" ng-class="{ on: selected( item ) }">
+        <input class="oversized" name="{{ name }}" type="checkbox" ng-model="item" ng-checked="selected( item )">
+    </div>
+
+    <div class="unfloat"></div>
+</div>

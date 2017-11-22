@@ -1,0 +1,52 @@
+<div ng-controller="cocktailsCtrl">
+    <div class="cell float" ng-repeat="( id, cocktail ) in cocktails | objects: filters">
+        <div class="pad" ng-init="tabbing( { cocktail: cocktail.name, index: 0 } )">
+            <table class="bordered" ng-dblclick="edit( { name: 'cocktails', id: id, data: cocktail } )">
+                <thead class="bordered">
+                    <tr>
+                        <td>
+                            <div class="title capitalize">{{ cocktail.name }}</div>
+                            <div class="subtitle capitalize">{{ cocktail.alias }}</div>
+                            <div class="group capitalize">{{ cocktail.group }}</div>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody class="bordered">
+                    <tr ng-repeat="option in cocktail.options track by $index" ng-show="tab[ cocktail.name ] == $index">
+                        <td class="capitalize" colspan="2">
+                            {{ option.glass.ice }} <span class="highlight">{{ option.glass.prep }} glass</span> with ice and add:
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="bordered rows">
+                    <tr ng-repeat="item in cocktail.recipe">
+                        <td class="right measure">{{ item.count | system }}</td>
+                        <td class="capitalize nowrap" ng-show="!item.type">{{ item.liquors }}</td>
+                        <td class="capitalize nowrap" ng-show="item.type">{{ item.types }} {{ item.liquors }}</td>
+                    </tr>
+
+                    <tr ng-repeat="option in cocktail.options track by $index" ng-show="tab[ cocktail.name ] == $index">
+                        <td class="capitalize" colspan="2">
+                            <div ng-show="option.steps.process">{{ option.steps.process }}</div>
+                            <div ng-show="option.steps.garnish">add {{ option.steps.garnish }} garnish</div>
+                            <div ng-show="option.steps.straw">add {{ option.steps.straw }} straw</div>
+                            <div ng-show="option.glass.serve !== option.glass.prep">serve in <span class="highlight">{{ option.glass.serve }} glass</span></div>
+                        </td>
+                    </tr>
+
+                    <tr ng-repeat="note in cocktail.notes track by $index" ng-show="tab[ cocktail.name ] == $index">
+                        <td class="capitalize" colspan="2">
+                            <div ng-show="note" class="note">{{ note }}</div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="tab nowrap capitalize" ng-class="{ active: tab[ cocktail.name ] == $index }" ng-repeat="option in cocktail.options track by $index" ng-click="tabbing( { cocktail: cocktail.name, index: $index } )">{{ option.name }}</td>
+                        <td class="tab fill"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>

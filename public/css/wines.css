@@ -1,0 +1,75 @@
+.board
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bottle
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16vw;
+    overflow-x: hidden;
+}
+
+.bottle_image
+{
+    height: 554px;
+}
+
+.menu .hover, .board .hover
+{
+    position: absolute;
+    background-color: rgba( 127, 127, 127, 0.5 );
+}
+
+.menu
+{
+    position: absolute;
+    left: 46%;
+    top: 0;
+}
+
+.menu img
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.missing
+{
+    background-color: rgba( 255, 127, 127, 0.5 );
+}
+
+.selected
+{
+    background-color: rgba( 127, 255, 127, 0.5 );
+}
+
+.selector
+{
+    position: absolute;
+    left: 0;
+    height: 16px;
+    width: 400px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.wine
+{
+    padding: 10px;
+}
+
+#board_highlight, #menu_highlight
+{
+    display: none;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 400px;
+    z-index: 10;
+}

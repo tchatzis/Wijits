@@ -1,0 +1,19 @@
+<div ng-controller="digitCtrl" class="element">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="float">
+        <div class="digits bordered">
+            <div class="digit float" ng-init="listen( name, data.listen ); value = data.value || 0">
+                <div class="segment horizontal c1r0" ng-class="{ on: on( value, 10 ) }"></div>
+                <div class="segment vertical c0r1" ng-class="{ on: on( value, 1 ) }"></div>
+                <div class="segment vertical c2r1" ng-class="{ on: on( value, 21 ) }"></div>
+                <div class="segment horizontal c1r2" ng-class="{ on: on( value, 12 ) }"></div>
+                <div class="segment vertical c0r3" ng-class="{ on: on( value, 3 ) }"></div>
+                <div class="segment vertical c2r3" ng-class="{ on: on( value, 23 ) }"></div>
+                <div class="segment horizontal c1r4" ng-class="{ on: on( value, 14 ) }"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="unfloat"></div>
+</div>

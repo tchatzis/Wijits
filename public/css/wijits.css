@@ -1,0 +1,708 @@
+:root
+{
+    --border-style: 1px solid #333333;
+    --hover-color: #666666;
+}
+
+.analog
+{
+    background-image: radial-gradient( circle at bottom, #FFFFBB 0, #F29F19 100% );
+    position: relative;
+    width: 160px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.analog .scale
+{
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    width: 100%;
+    height: 133%;
+    border-radius: 50%;
+    border-top: 20px solid white;
+    border-left: 20px solid white;
+    border-bottom: 20px solid white;
+    border-right: 20px solid red;
+}
+
+.analog .pivot
+{
+    background-color: #111111;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.analog .needle
+{
+    position: absolute;
+    top: -230%;
+    left: 50%;
+    width: 1px;
+    height: 500%;
+    background-color: black;
+}
+
+.arrow
+{
+    transform: rotate( -45deg );
+    pointer-events: none;
+}
+
+.band
+{
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    display: block;
+}
+
+.bordered
+{
+    border: var( --border-style );
+}
+
+.rounded
+{
+    border-radius: 10px;
+}
+
+.bottom
+{
+    position: relative;
+    bottom: 0;
+}
+
+.capitalize
+{
+    text-transform: capitalize;
+}
+
+.color
+{
+    border: 1px solid #222222;
+    border-radius: 50%;
+    cursor: pointer;
+    color: silver;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.color:hover
+{
+    border-color: white;
+}
+
+.column
+{
+    display: block;
+    position: relative;
+    min-width: 32px;
+    max-width: 54px;
+    height: 100%;
+    border-right: var( --border-style );
+}
+
+.constrain
+{
+    width: 440px;
+    min-height: 24px;
+}
+
+.viewer
+{
+    width: 480px;
+    overflow: hidden;
+    perspective: 500px;
+    perspective-origin: 50% 50%;
+}
+
+.viewer .horizontal
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*display: inline-block;
+    white-space: nowrap;*/
+}
+
+.vertical
+{
+    position: absolute;
+}
+
+.horizontal .item
+{
+    position: absolute;
+    vertical-align: middle;
+    text-align: center;
+    border: var( --border-style );
+    border-radius: 10%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.vertical .item
+{
+    position: absolute;
+    vertical-align: middle;
+    text-align: center;
+    border: var( --border-style );
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.vertical .item:hover
+{
+    background-color: var( --hover-color );
+}
+
+.controls
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.dial
+{
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border: 3px solid #333333;
+    border-radius: 50% 50% 50% 50%;
+    cursor: pointer;
+}
+
+/* digit */
+.digit
+{
+    position: relative;
+    width: 30px;
+    height: 40px;
+    transform: skew( -15deg );
+}
+
+.digit .segment
+{
+    position: absolute;
+    background-color: lime;
+    border-radius: 2px;
+    opacity: 0.2;
+}
+
+.digit .on
+{
+    opacity: 1;
+}
+
+.digit .horizontal
+{
+    width: 80%;
+    height: 10%;
+    left: 10%;
+}
+
+.c1r0
+{
+    top: 0;
+}
+
+.c1r2
+{
+    top: 45%;
+}
+
+.c1r4
+{
+    bottom: 0;
+}
+
+.digit .vertical
+{
+    height: 35%;
+    width: 10%;
+}
+
+.c0r1, .c2r1
+{
+    top: 10%;
+}
+
+.c0r1, .c0r3
+{
+    left: 0;
+}
+
+.c0r3, .c2r3
+{
+    bottom: 10%;
+}
+
+.c2r1, .c2r3
+{
+    right: 0;
+}
+/* end digit */
+
+.element
+{
+    clear: both;
+    padding: 10px;
+    position: relative;
+    width: 640px;
+    min-height: 22px;
+    border-bottom: var( --border-style );
+}
+
+.error
+{
+    color: red;
+}
+
+.gradient
+{
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.grid
+{
+    position: absolute;
+    z-index: 10;
+}
+
+/* start gradients */
+.fade
+{
+    background: -webkit-linear-gradient( left, hsla( 0, 100%, 0%, 1 ), hsla( 0, 100%, 100%, 1 ) );
+}
+
+.heat
+{
+    background-image: -webkit-linear-gradient( left, hsla( 240, 100%, 50%, 1 ) 20%, hsla( 180, 100%, 50%, 1 ) 40%, hsla( 75, 100%, 50%, 1 ) 70%, hsla( 0, 100%, 50%, 1 ) );
+}
+
+.temp
+{
+    background: -webkit-linear-gradient( left, hsla( 210, 100%, 50%, 1 ), hsla( 90, 100%, 100%, 1 ), hsla( 0, 100%, 50%, 1 ) );
+}
+
+/* end gradients */
+
+.field
+{
+    vertical-align: top;
+    padding-bottom: 2px;
+}
+
+.fields
+{
+    overflow: auto;
+    display: inline-block;
+}
+
+.fixed
+{
+    width: 33%;
+}
+
+.float
+{
+    float: left;
+}
+
+.knob
+{
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border: 3px solid #333333;
+    border-radius: 50% 50% 50% 10%;
+    cursor: pointer;
+}
+
+.dial:hover, .knob:hover
+{
+    background-color: var( --hover-color );
+}
+
+.label
+{
+    display: inline-block;
+    min-width: 150px;
+    line-height: 20px;
+}
+
+.link
+{
+    cursor: pointer;
+}
+
+.link:hover
+{
+    background-color: var( --hover-color );
+}
+
+.meter, .range
+{
+    position: relative;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.meter .bar
+{
+    border-right: var( --border-style );
+    float: left;
+    width: 3px;
+    height: 100%;
+}
+
+.meter .obscure
+{
+    background-color: black;
+    opacity: 0.9;
+}
+
+.multi
+{
+    border: 1px solid transparent;
+    vertical-align: middle;
+    padding-right: 20px;
+    border-radius: 4px;
+    margin: 0 1px 1px 0;
+    cursor: pointer;
+}
+
+.multi:hover
+{
+    background-color: var( --hover-color );
+}
+
+.nowrap
+{
+    white-space: nowrap;
+}
+
+.oversized
+{
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.range
+{
+    width: 400px;
+}
+
+.range .limit
+{
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    background-color: var( --border-style );
+    cursor: pointer;
+    text-align: center;
+}
+
+.range .limit:hover
+{
+    background-color: var( --hover-color );
+}
+
+.range .on
+{
+    background-color: green !important;
+}
+
+.range .handle
+{
+    position: absolute;
+    width: 12px;
+    line-height: 32px;
+    height: 100%;
+    background-color: white;
+    opacity: 0.3;
+    border-radius: 2px;
+    color: black;
+}
+
+.range .handle:hover
+{
+    opacity: 1;
+}
+
+.range .lower
+{
+    left: 0;
+}
+
+.range .upper
+{
+    right: 0;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.rotate
+{
+    position: relative;
+    transform-origin: 0 0;
+    transform: rotate( -90deg );
+}
+
+.rotate input
+{
+    width: 180px;
+}
+
+.rotate .zero
+{
+    width: 120px;
+}
+
+.row
+{
+    min-height: 32px;
+    line-height: 32px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.row:hover
+{
+    background-color: var( --hover-color );
+}
+
+.row:active
+{
+    background-color: transparent;
+}
+
+.row > div
+{
+    border-bottom: var( --border-style );
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.shift
+{
+    position: relative;
+    border: 1px solid green;
+}
+
+.small
+{
+    font-family: "helvetica", "courier", "serif";
+    font-size: 11px;
+    text-align: center;
+    min-width: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    padding: 0 2px 0 2px;
+    color: #FEC;
+}
+
+.spread
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: calc( 100% - 72px );
+}
+
+.switch
+{
+    position: relative;
+    width: 48px;
+    height: 24px;
+    border: var( --border-style );
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.switch .slider
+{
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    left: -50%;
+    transition: left 0.5s;
+}
+
+.switch .enabled
+{
+    left: 0;
+}
+
+.switch .on, .switch .toggle, .switch .off
+{
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    line-height: 24px;
+    text-align: center;
+}
+
+.switch .on
+{
+    left: 0;
+    background-color: green;
+}
+
+.switch .toggle
+{
+    width: 36%;
+    left: 32%;
+    background-color: #333333;
+    border-radius: 4px;
+}
+
+.switch:hover .toggle
+{
+    background-color: var( --hover-color );
+}
+
+.switch .off
+{
+    right: 0;
+    background-color: red;
+}
+
+.overline
+{
+    border-top: 2px solid silver;
+}
+
+.separator
+{
+    border-right: 2px solid silver;
+}
+
+.underline
+{
+    border-bottom: 2px solid silver;
+}
+
+.unfloat
+{
+    clear: both;
+}
+
+.unit
+{
+    color: white;
+}
+
+.unrotate
+{
+    transform: rotate( 90deg );
+}
+
+.valign
+{
+    height: 100%;
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.value
+{
+    color: cyan;
+}
+
+.warn
+{
+    color: yellow;
+}
+
+tree .constrain
+{
+    width: 600px;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+/*tree .edge
+{
+    position: relative;
+    left: -24px;
+    top: -38px;
+    width: 20px;
+    height: 30px;
+    border-left: 1px dotted #333333;
+    border-bottom: 1px solid #333333;
+    display: inline-block;
+}*/
+
+tree
+{
+    font-family: 'helvetica', monospace;
+    font-size: 0.8em;
+}
+
+tree .item, tree .key
+{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    max-width: 300px;
+    max-height: 16px;
+    white-space: nowrap;
+}
+
+tree .key
+{
+    color: green;
+}
+
+tree span
+{
+    color: gray;
+}
+
+tree .item
+{
+    color: white;
+}
+
+tree .insert
+{
+    height: 6px;
+    border: 1px solid #111111;
+    border-radius: 4px;
+    max-width: 200px;
+}
+
+tree .ul
+{
+    position: relative;
+    margin-left: 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/*tree .ul[ draggable=true ]
+{
+    border: 1px solid transparent;
+    max-height: 28px;
+}*/
+
+tree .item:hover, tree .insert:hover, tree .key:hover
+{
+    color: cyan;
+    border: 1px solid #666666;
+}
+

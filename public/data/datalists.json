@@ -1,0 +1,14 @@
+[
+  {
+    "ice": [ "fill", "half fill" ]
+  },
+  {
+    "glass": [ "cocktail", "collins", "highball", "margarita", "martini", "mixing", "rocks", "sour" ]
+  },
+  {
+    "group": [ "cream drinks", "martinis", "manhattans", "two liquor drinks", "highballs", "sours", "specials", "shots and shooters" ]
+  },
+  {
+    "options": [ "on the rocks", "neat", "shooter", "straight up" ]
+  }
+]

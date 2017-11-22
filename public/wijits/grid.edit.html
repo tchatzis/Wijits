@@ -1,0 +1,63 @@
+<div class="panels">
+    <div class="panel pad bordered rounded">
+        <div class="table">
+            <div class="tbody" ng-form="colForm">
+                <div class="tr">
+                    <div class="td label">Heading</div>
+                    <div class="td" ng-form="inner">
+                        <input type="text" name="label" ng-model="column.label" ng-required="true">
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="td label">Type</div>
+                    <div class="td" ng-form="inner">
+                        <select ng-model="column.type" ng-change="select( column.type )" ng-required="true">
+                            <option ng-repeat="type in types | array | orderBy: type">{{ type.text }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="td label">Width</div>
+                    <div class="td" ng-form="inner">
+                        <input type="range" min="{{ type.min }}" max="{{ type.max }}" ng-model="column.width" ng-required="false" style="width: 215px;">
+                        <input type="number" min="{{ type.min }}" max="{{ type.max }}" ng-model="column.width">
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="td label">Required</div>
+                    <div class="td">
+                        <input type="checkbox" ng-model="column.required">
+                    </div>
+                </div>
+            </div>
+            <div class="tr">
+                <div class="td"></div>
+                <div class="td">
+                    <div class="button icon" ng-click="addColumn( column );" ng-class="{ disabled: colForm.$invalid }">{{ '+' | unicode }}</div>
+                    <!--<icon exception="error( message )" message="Missing fields" handler="addColumn( column )" args="column" label="next" disabled="colForm.$invalid"></icon>-->
+                </div>
+            </div>
+            <div class="tr" ng-show="message">
+                <div class="td"></div>
+                <div class="td">
+                    <div class="warn">{{ message }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel pad bordered rounded">
+        <div class="table">
+            <div class="tr" ng-repeat="column in columns track by $index">
+                <div class="td">
+                    <div class="button" ng-click="edit( column );">{{ column.label }}</div>
+                </div>
+                <div class="td">
+                    <div class="button icon" ng-click="removeColumn( column );">{{ '-' | unicode }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="button icon" ng-click="setMode( 'input' );" ng-class="{ disabled: !columns.length }">{{ '▦' | unicode }}</div>
+        <!--<icon exception="error( message )" message="No columns added" handler="setMode( mode )" args="'input'" label="data" disabled="!columns.length"></icon>-->
+    </div>
+</div>

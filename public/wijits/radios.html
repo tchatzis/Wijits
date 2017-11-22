@@ -1,0 +1,11 @@
+<div ng-controller="singleCtrl" class="element">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="constrain float">
+        <div ng-repeat="item in data" class="fixed float" ng-click="select( { name: name, value: item } )">
+            <div class="unfloat nowrap multi" ng-class="{ on: item === selected }"><input name="{{ name }}" type="radio" ng-value="item" ng-checked="item === selected"> {{ item }}</div>
+        </div>
+    </div>
+
+    <div class="unfloat"></div>
+</div>

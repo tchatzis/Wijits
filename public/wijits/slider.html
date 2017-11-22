@@ -1,0 +1,11 @@
+<div ng-controller="sliderCtrl" class="element">
+    <div class="label capitalize float">{{ label }}</div>
+
+    <div class="float valign">
+        <div class="float gradient {{ data.class }}" ng-init="item = data.value">
+            <input type="range" ng-model="item" min="{{ data.min }}" max="{{ data.max }}" step="{{ data.step || 1 }}" ng-mouseup="select( { name: name, value: item, step: data.step } )" ng-dblclick="reset( data.value )">
+        </div>
+
+        <div class="float small value">{{ item | precision: data.step || 1 }}</div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="fields bordered">
+    <field selected="selected" values="selected.data" update="update( { path: path, id: id, el: el } )"></field>
+
+    <div class="unfloat center">
+        <div class="button float" ng-click="done( { path: selected.path, id: selected.id } )">{{ '✓' | unicode }}</div>
+        <div class="button float" ng-click="delete( { path: selected.path, id: selected.id } )">{{ '✖' | unicode }}</div>
+    </div>
+</div>

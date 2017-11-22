@@ -1,0 +1,47 @@
+<div ng-controller="samplesCtrl">
+    <div class="table">
+        <div class="tbody" ng-repeat="sample in items | orderBy: 'name' track by $index" ng-form="outer">
+            <div class="tr bordered" ng-show="sample.$$hashKey !== selected">
+                <div class="td link" ng-click="location( 'samples/' + sample.name )">{{ sample.name }}</div>
+                <div class="td">{{ sample.notes }}</div>
+                <div class="td button center" ng-class="{ disabled: false }" ng-click="edit( sample );">{{ '✎' | unicode }}</div>
+                <div class="td button center" ng-class="{ disabled: false }" ng-click="db.delete( { path: 'samples', data: sample, callback: list } );">{{ '➖' | unicode }}</div>
+            </div>
+            <div ng-show="sample.$$hashKey === selected" class="tr highlight" ng-form="inner">
+                <div class="td">
+                    <input type="text" name="name" placeholder="name" ng-model="sample.name" ng-required="true" ng-class="{ required: inner.name.$error.required }">
+                </div>
+                <div class="td">
+                    <input type="text" name="notes" placeholder="notes" ng-model="sample.notes" ng-required="true" ng-class="{ required: inner.notes.$error.required }">
+                </div>
+                <div class="td button center" ng-class="{ disabled: outer.$invalid }" ng-click="db.update( { path: 'samples', data: sample, callback: list } ); cancel();">{{ '✓' | unicode }}</div>
+                <div class="td button center" ng-click="sample = revert; cancel();">{{ '⤾' | unicode }}</div>
+            </div>
+        </div>
+        <div class="tbody">
+            <div class="tr" ng-form="form">
+                <div class="td">
+                    <input type="text" name="name" placeholder="name" ng-model="item.name" ng-required="true">
+                </div>
+                <div class="td">
+                    <input type="text" name="notes" placeholder="notes" ng-model="item.notes" ng-required="true">
+                </div>
+                <div class="td button center" ng-class="{ disabled: form.$invalid }" ng-click="db.create( { data: item, path: 'samples', callback: list } ); item = {}">{{ '➕' | unicode }}</div>
+                <div class="td button center" ng-click="clear();">{{ '⤾' | unicode }}</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="unfloat pad">
+        <pre>
+        /js/loader.js - add controller script
+        /js/controllers - create controller
+        /js/wijits.directives.js - add name to list
+
+        /views/samples - create tag
+        /views/widgets - create widget
+        </pre>
+    </div>
+</div>

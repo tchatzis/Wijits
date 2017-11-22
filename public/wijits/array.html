@@ -1,0 +1,43 @@
+<div ng-controller="arrayCtrl" class="element">
+    <div class="unfloat">
+        <div class="label capitalize float">{{ label }}</div>
+
+        <div class="float">
+            <div class="float" ng-form="form">
+                <input type="text" name="item" data-field='{ "array": 1, "ignore": 1 }' ng-model="item" ng-required="true">
+            </div>
+
+            <div class="button float center" ng-click="append( { name: name, array: array, item: item, scope: this } )" ng-class="{ disabled: form.item.$error.required }">{{ '+' | unicode }}</div>
+            <div class="button float center" ng-click="array[ $index ] = olditem">{{ '⤾' | unicode }}</div>
+        </div>
+    </div>
+
+    <div class="unfloat" ng-repeat="i in array track by $index">
+        <div class="label float center">{{ $index }}</div>
+
+        <div class="float">
+            <div class="float" ng-init="olditem = array[ $index ]">
+                <input type="text" data-field='{ "array": 1 }' ng-model="array[ $index ]">
+            </div>
+
+            <div class="button center float" ng-click="remove( { name: name, array: array, item: array[ $index ] } )">{{ '-' | unicode }}</div>
+            <div class="button center float" ng-click="array[ $index ] = olditem">{{ '⤾' | unicode }}</div>
+        </div>
+
+        <div class="unfloat"></div>
+    </div>
+
+    <div class="unfloat" ng-show="array.length">
+        <div class="float">
+            <div class="label float">Output</div>
+            <select ng-model="tag">
+                <option value="{{ t }}" ng-repeat="t in ls.get( 'tags' )">{{ t.type }}</option>
+            </select>
+        </div>
+
+        <div class="button center float" ng-click="export( { name: name, label: label, value: array, tag: tag } )" ng-class="{ disabled: !array.length || !tag }">{{ '✓' | unicode }}</div>
+        <div class="button center float" ng-click="clear( { name: name, array: array } )">{{ '✖' | unicode }}</div>
+
+        <div class="unfloat"></div>
+    </div>
+</div>

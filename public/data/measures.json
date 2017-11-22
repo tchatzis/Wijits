@@ -1,0 +1,145 @@
+[
+  {
+    "name": "dash",
+    "count": "dash",
+    "system":
+    {
+      "imperial":
+      {
+        "value": 0.03215,
+        "unit": "dash"
+      },
+      "metric":
+      {
+        "value": 1,
+        "unit": "ml"
+      }
+    }
+  },
+
+  {
+    "name": "drop",
+    "count": "drop",
+    "system":
+    {
+      "imperial":
+      {
+        "value": 0.01,
+        "unit": "drop"
+      },
+      "metric":
+      {
+        "value": 0.01,
+        "unit": "drop"
+      }
+    }
+  },
+
+  {
+    "name": "fill",
+    "count": "fill",
+    "system":
+    {
+      "imperial":
+      {
+        "value": 0,
+        "unit": "fill"
+      },
+      "metric":
+      {
+        "value": 0,
+        "unit": "fill"
+      }
+    }
+  },
+
+  {
+    "name": "1/2",
+    "count": 2,
+    "system":
+    {
+      "imperial":
+      {
+        "value": 0.5,
+        "unit": "oz"
+      },
+      "metric":
+      {
+        "value": 14,
+        "unit": "ml"
+      }
+    }
+  },
+
+  {
+    "name": "3/4",
+    "count": 3,
+    "system":
+    {
+      "imperial":
+      {
+        "value": 0.75,
+        "unit": "oz"
+      },
+      "metric":
+      {
+        "value": 22,
+        "unit": "ml"
+      }
+    }
+  },
+
+  {
+    "name": "1",
+    "count": 4,
+    "system":
+    {
+      "imperial":
+      {
+        "value": 1,
+        "unit": "oz"
+      },
+      "metric":
+      {
+        "value": 30,
+        "unit": "ml"
+      }
+    }
+  },
+
+  {
+    "name": "1 1/2",
+    "count": 6,
+    "system":
+    {
+      "imperial":
+      {
+        "value": 1.5,
+        "unit": "oz"
+      },
+      "metric":
+      {
+        "value": 44,
+        "unit": "ml"
+      }
+    }
+  },
+
+  {
+    "name": "2",
+    "count": 8,
+    "system":
+    {
+      "imperial":
+      {
+        "value": 2,
+        "unit": "oz"
+      },
+      "metric":
+      {
+        "value": 59,
+        "unit": "ml"
+      }
+    }
+  }
+]
